@@ -18,10 +18,12 @@ const NoteScreen = () => {
 			reset(note);
 			activeId.current = note.id;
 		}
+		// eslint-disable-next-line
 	}, [reset, note.id, activeId]);
 
 	useEffect(() => {
 		dispatch(activeNote(id, { ...formValues }));
+		// eslint-disable-next-line
 	}, [formValues]);
 
 	const handleDeleteNote = () => {

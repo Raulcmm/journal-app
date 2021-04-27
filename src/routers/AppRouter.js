@@ -30,6 +30,7 @@ const AppRouter = () => {
 			}
 			setChecking(false);
 		});
+		// eslint-disable-next-line
 	}, [dispatch, firebase.auth().onAuthStateChanged]);
 
 	if (checking) {
